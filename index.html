@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg p-5">
+          <div class="container ">
+            <div class="logo d-flex justify-content-start">
+              <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="Logo" />
+  
+                <div class="logo-links d-flex flex-column ">
+                  <a class="text-decoration-none logo-first text-white" href=""
+                    ><strong>Weather</strong></a
+                  >
+                  <a class="text-decoration-none logo-sec text-white " href=""
+                    >tagline goes here</a
+                  >
+                </div>
+              </a>
+            </div>
+           
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item me-2">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link text-white" href="#">News</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link text-white" href="#">Live cameras</a>
+                </li>
+                <li class="nav-item me-2">
+                  <a class="nav-link text-white" href="#">Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="content py-5 ">
+      <div class="container px-5">
+        <form class="search position-relative mb-5">
+          <input type="search" id="search" placeholder="Find your location..." class="search-input form-control rounded-pill p-3 text-white">
+          <input type="button"  id="submit" value="Find" class="find-btn btn btn-info text-white rounded-pill ">
+        </form>
+      </div>
+
+
+    </section>
+
+    <div class="content-show pt-5 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 ">
+          <div class="today rounded-3">
+           
+          </div>
+          </div>
+
+          <div class="col-lg-4 ">
+            <div class="tomorrow rounded-3">
+              
+            </div>
+            </div>
+
+            <div class="col-lg-4 ">
+              <div class="third-day rounded-3">
+                
+              </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pt-5 pb-4 ">
+      <div class="container">
+        <div class="row g-3 mb-4">
+          <div class="col-lg-6">
+            <div class="footer-inner">
+              <form  class="position-relative">
+                <input type="email" name="email" placeholder="Enter your email to subscribe..." class="footer-form form-control rounded-pill p-3 text-white">
+                <input type="button"  id="submit" value="Subscribe" class="footer-btn btn btn-info text-white rounded-pill position-absolute">
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="social-icon ">
+              <ul class="list-unstyled d-flex align-items-center justify-content-center m-0 mt-2 ">
+                <li class="d-flex justify-content-center align-items-center me-4 rounded-circle"><a href=""><i class="fa-brands fa-facebook-f fa-lg "></i></a></li>
+              
+              
+                <li class="d-flex justify-content-center align-items-center me-4 rounded-circle"><a href=""><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+              
+              
+                <li class="d-flex justify-content-center align-items-center me-4 rounded-circle"><a href=""><i class="fa-brands fa-google-plus-g fa-lg "></i></a></li>
+              
+              
+                <li class="d-flex justify-content-center align-items-center me-4 rounded-circle"><a href=""><i class="fa-brands fa-pinterest fa-lg "></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="copy">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
